@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUD SYSTEM</title>
+</head>
+
+<body>
+    <section>
+        <div class="container pt-5">
+            <div class="system-box row justify-content-center align-items-center flex-column py-5 px-4 rounded-3">
+                <h2 class="box-title text-center mb-5">CRUD SYSTEM</h2>
+                <input type="text" onFocus="inputFocus(this);" id="name" placeholder="PRODUCT NAME" class="form-control">
+                <input type="text" onFocus="inputFocus(this);" id="price" placeholder="PRODUCT PRICE" class="form-control">
+                <textarea type="text" onFocus="textareaFocus();" id="description" placeholder="DESCRIPTION...." rows="5"
+                    class="form-control"></textarea>
+                <div class="btns">
+                    <button id="addBtn" onclick="adding()" class="btn btn-primary d-block">ADD</button>
+                    <button id="updateBtn" onclick="update()" class="btn btn-warning d-none">UPDATE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container px-0 pt-5">
+            <table class="result-table table table-borderless rounded-3">
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>Product Name</td>
+                        <td>Product Price</td>
+                        <td>Product Description</td>
+                        <td>Update</td>
+                        <td>Delete</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody" class="table-group-divider">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
